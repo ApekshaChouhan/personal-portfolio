@@ -1,0 +1,138 @@
+
+
+
+.container.testimonials_container {
+   
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+   
+    
+}
+#Testimonials{
+    margin-top: 40rem;
+}
+
+.client_avatar {
+    width: 10rem;
+    aspect-ratio: 1.2/1;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 auto 0 ;
+
+}
+#Testimonials{
+    margin-top: 40rem ;
+   
+   
+    
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials {
+    background: var(--color-bg-variant);
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    user-select: none;
+
+}
+
+.client_review {
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 30%;
+    margin: 0.8rem auto 0 0;
+
+
+}
+
+
+/*------------------MEDIA QUERIES (MEDIUM DEVICES)------------*/
+@media screen and (max-width:1024px) {
+    .container.testimonials_container {
+        width: 50%;
+
+
+    }
+
+
+}
+
+@media screen and (max-width:1440px) {
+    .container.testimonials_container {
+        width: 50%;
+
+
+    }
+
+
+}
+@media screen and (max-width:768px) {
+  .container.testimonials_container {
+        width: var(--container-width-md);
+        height: 25rem;
+        
+
+        
+    }
+
+    .client_review {
+        width: var(--container-width-sm);
+        height: auto;
+
+    }
+    #Testimonials{
+        margin-top: 12rem;
+        width: 30rem;
+        margin-left: 16rem;
+        
+    }
+
+
+
+}
+
+
+/*------------------MEDIA QUERIES (SMALL DEVICES)------------*/
+@media screen and (max-width:600px) {
+    .container.testimonials_container {
+        width: var(--container-width-sm);
+        height: 25rem;
+        
+
+        
+    }
+
+    .client_review {
+        width: var(--container-width-sm);
+        height: auto;
+
+    }
+    #Testimonials{
+        margin-top: 40rem;
+        width: 30rem;
+        margin-left: 16rem;
+        
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .container.testimonials_container {
+        height: auto;
+        width: 90%;
+    }
+   
+    #Testimonials{
+        margin-top: 15rem;
+        width: 30rem;
+        margin-left: 25rem;
+        
+    }
+}

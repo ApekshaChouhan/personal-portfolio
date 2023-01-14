@@ -1,0 +1,181 @@
+.experience_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+}
+
+
+.experience_container > div {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.experience_container > div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+
+}
+
+.experience_container > div h3 {
+     text-align: center;
+     margin-bottom: 2rem;
+     color: var(--color-primary) ;
+}
+
+.experience_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.experience_details{
+    display: flex;
+    gap: 0.5rem;
+    
+}
+.experience_details-icon{
+    margin-top: 6px;
+    color: var(--color-primary);
+
+}
+
+/*------------------MEDIA QUERIES (MEDIUM DEVICES)------------*/
+@media screen and (min-width:1440px)  and (max-width:2560px) {
+    #Experience{
+        margin-bottom: 40rem;
+        padding: 1rem 2rem;
+       
+    }
+    .headings3{
+        
+        margin-bottom: 5rem;
+    }
+    .experience_container{
+        grid-template-columns: 1fr 1fr;
+            }
+            .experience_details{
+                padding: 0.7rem;
+            }
+        }
+
+@media screen and (min-width:1024px) and (max-width:1440px) {
+    #Experience{
+        margin-top: 25rem;
+        
+       
+    }
+    .headings3{
+        
+        margin-bottom: 2rem;
+    }
+    
+}
+@media screen and (max-width:1024px) {
+
+    .experience_container{
+        grid-template-columns: 1fr;
+
+    }
+    .experience_container >div{
+        width: 80%;
+        padding: 2rem;
+        margin:0 auto ;
+    }
+    .experience_content{
+        padding: 1rem;
+    }
+    #Experience{
+        margin-bottom: -30rem;
+        margin-top: 20rem;
+    }
+    .headings3{
+        
+        margin-bottom: 2rem;
+    }
+}
+/*------------------MEDIA QUERIES (SMALL DEVICES)------------*/
+
+
+@media screen and (max-width:768px) {
+ 
+    .experience_container{
+        gap: 5rem;
+    }
+    .experience_container >div{
+        width:90%;
+        padding: 2rem 1rem;
+
+    }
+    #Experience{
+        margin:50rem 2.5rem;
+       
+    }
+    .headings3{
+        margin: 0 -25rem  2rem 15rem ;
+      
+    }
+   
+    .experience_container >div{
+        width:35rem;
+        padding: 1rem 0;
+        margin-left: 15rem;
+
+    }
+
+}
+@media screen and (max-width:500px)   {
+    .experience_container{
+        gap: 5rem;
+    }
+    #Experience{
+        margin:10rem 10rem;
+            
+    }
+    .experience_container >div{
+        width:90%;
+        padding: 2rem 1rem;
+        margin-left: 12rem;
+
+    }
+    
+    .experience_content{
+        display: grid;
+        flex-direction: row;
+
+        place-items: center;
+        grid-template-columns: 1fr ;
+        row-gap: 2rem;
+      
+
+    }
+  
+    .headings3{
+        margin: 0 -25rem  2rem 18rem ;
+    }
+
+}
+@media screen and (max-width:400px) {
+    #Experience{
+        margin-top:15rem;
+        margin-bottom: 60rem;
+        margin-left: 18rem;
+    }
+    .headings3{
+        margin: 0 -28rem  2rem 15rem ;
+    }
+    .experience_container >div{
+        width:20rem;
+        padding: 1rem 0;
+        margin-left: 12rem;
+
+    }
+    .experience_container {
+        
+        padding: 4rem  0;
+    }
+}
